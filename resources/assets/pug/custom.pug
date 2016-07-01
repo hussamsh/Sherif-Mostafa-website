@@ -1,0 +1,66 @@
+html(lang="en")
+	
+	head
+		title= "My title is awesome"
+
+		meta(name='description', content='')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+
+		link(href='https://fonts.googleapis.com/css?family=Poppins|Cormorant+SC|PT+Serif:700italic|Lobster', rel='stylesheet')
+
+		link(href='{{{ asset(\'/css/app.css\') }}}', rel='stylesheet')
+		link(href='{{{asset(\'/css/pe-icon-7-stroke/css/pe-icon-7-stroke.css\')}}}', rel='stylesheet')
+		link(href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css', rel='stylesheet')
+		link(href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css', rel='stylesheet')
+		link(href='https://npmcdn.com/basscss@8.0.1/css/basscss.min.css', rel='stylesheet')
+
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+		script(src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js')
+		script(src='{{{asset(\'/scripts/custom.js\')}}}')
+	body
+		.image#image1
+			.content
+				.wrapper
+					hr
+					h1. 
+						Sherif Mostafa
+					hr
+					h3.
+						Economist
+		section.services
+			.content
+				.wrapper
+					p#description.
+						What I do best
+				hr
+				
+				.service-wrapper
+					.service
+						i.pe-7s-graph1
+						h3.
+							Market research
+						p.
+							Get the most vital info about the market both now and in the future to make the best and most beneficial decision
+					.service
+						i.pe-7s-note2
+						h3.
+							Fesability studies
+						p.
+							Helping you understand the market and the needs for your invesment to thrive, giving it a solid roadmap for it's success
+					.service
+						i.pe-7s-culture
+						h3.
+							 Coporate structuring
+						p.
+							Wether an existing or a new coporate , structuring your entity right is vital for sucsess
+
+
+		section.about-me
+			.content
+				h1.
+					About me
+				hr
+				.wrapper
+					.image-wrapper
+						.personal-image
+					.personal-info

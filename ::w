@@ -1,0 +1,88 @@
+//@import 'axis'
+//@import 'nib'
+
+//Mixins 
+align-text-center-veritcal()
+	margin:0
+	padding:0
+	display:table-cell
+	text-align:center
+	vertical-align:middle
+	width:100%
+	position:absolute
+body
+	margin:0
+	padding:0
+
+	#image1
+		display:table
+		width:100%
+		height:100%
+		background:url(https:\/\/images.unsplash.com/photo-1461016951828-c09537329b3a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=7777e79b0b2c539d64f1f356d09ed136)
+		background-size:cover
+		background-position:center center
+.image
+	.wrapper
+		align-text-center-veritcal()
+		top: 33%
+		h1
+			font-family: 'PT Serif', serif;
+			font-size:5em
+			font-weight:600
+			color:white
+		hr
+			max-width:500px
+			max-height:50px
+			border: 0;
+			height: 3px;
+			background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));	
+		h3
+			color:white
+			font-family: 'Cormorant SC', serif;
+			font-size:2em
+.services
+	.content
+		.wrapper
+			min-height:50px
+			#description
+				align-text-center-veritcal()
+				margin-top:25px
+				font-size:3em
+				font-weight:400
+				font-family: 'Lobster', cursive;
+
+		hr
+			margin-top:50px
+			max-width:300px
+			padding: 0
+			border: none
+			border-top: medium double #333
+			color: #333
+			text-align: center
+		hr:after
+			content: "\002053"
+			display: inline-block
+			position: relative
+			top: -0.7em
+			font-size: 1.5em
+			padding: 0 0.25em
+			background: white
+
+		.service-wrapper
+			height:250px
+			width:100%
+			.service
+				height:200px
+				background:blue
+				lost-column:1/3
+				margin-bottom:20px
+				+below(rupture.mobile-cutoff)
+					lost-column:1/1
+				h3
+					background:green
+				.row
+					lost-row:1/3
+					i
+						margin-left:50%
+						background:red
+						lost-column:1/2

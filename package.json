@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "scripts": {
+    "prod": "gulp --production",
+    "dev": "gulp watch"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "^3.0.0",
+    "gulp": "^3.9.1",
+    "laravel-elixir": "^6.0.0-4",
+    "laravel-elixir-stylus": "^2.0.2",
+    "laravel-elixir-stylus-bundle": "^1.2.1",
+    "lost": "^6.8.1",
+    "poststylus": "^0.2.3"
+  },
+  "dependencies": {
+    "axis": "^0.6.1",
+    "gulp-if": "^2.0.1",
+    "laravel-elixir-lost": "^2.0.0",
+    "laravel-elixir-pug": "^1.0.4",
+    "pug": "^2.0.0-beta3"
+  }
+}
