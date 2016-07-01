@@ -1,5 +1,26 @@
+
+mixin add-card
+	.card(class="cell")
+		.card-image(class="waves-effect waves-block waves-light")
+			img(src="https://images.unsplash.com/uploads/1413349410189e2a95d2e/39982a21?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=d4bd480137c8dd10d87051f6c33edbfc").activator
+		.card-content
+			span(class="activator grey-text text-darken-4").card-title.
+				Cement factory study
+			p.
+				I am a very special card
+		.card-reveal
+			.card-title(class="grey-text text-darken-4") Second card title
+				i(class="material-icons right") close
+			p.
+				Here is some more information about this study
+		.card-action
+			a(href="#").
+				Buy this study
+mixin section-title(name)
+	h1
+		name
+	hr
 html(lang="en")
-	
 	head
 		title= "My title is awesome"
 
@@ -10,13 +31,20 @@ html(lang="en")
 
 		link(href='{{{ asset(\'/css/app.css\') }}}', rel='stylesheet')
 		link(href='{{{asset(\'/css/pe-icon-7-stroke/css/pe-icon-7-stroke.css\')}}}', rel='stylesheet')
+		link(href='{{{asset(\'/css/materialize.min.css\')}}}', rel='stylesheet' , media="screen,projection")
+
 		link(href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css', rel='stylesheet')
 		link(href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css', rel='stylesheet')
-		link(href='https://npmcdn.com/basscss@8.0.1/css/basscss.min.css', rel='stylesheet')
+		link(href='http://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
 
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
 		script(src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js')
-		script(src='{{{asset(\'/scripts/custom.js\')}}}')
+
+		script(src='{{{asset(\'/js/isotope.pkgd.min.js\')}}}')
+		script(src='{{{asset(\'/js/custom.js\')}}}')
+		script(src='{{{asset(\'/js/cells-by-row.js\')}}}')
+		script(src='{{{asset(\'/js/materialize.min.js\')}}}')
+
 	body
 		.image#image1
 			.content
@@ -30,10 +58,9 @@ html(lang="en")
 		section.services
 			.content
 				.wrapper
-					p#description.
+					h1.
 						What I do best
-				hr
-				
+					hr
 				.service-wrapper
 					.service
 						i.pe-7s-graph1
@@ -53,8 +80,6 @@ html(lang="en")
 							 Coporate structuring
 						p.
 							Wether an existing or a new coporate , structuring your entity right is vital for sucsess
-
-
 		section.about-me
 			.content
 				h1.
@@ -64,3 +89,27 @@ html(lang="en")
 					.image-wrapper
 						.personal-image
 					.personal-info
+						h3#title.
+							This is my story
+						p#description. 
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida, ligula at maximus egestas, enim dui faucibus metus, et rutrum orci ipsum vel ex. Donec id est eget odio dapibus blandit sed ac nisi. Curabitur gravida mattis odio, id tristique mauris dictum eget. Etiam aliquet lectus vel lectus vulputate elementum. Morbi tristique tellus ut magna ultricies, quis ullamcorper diam ultrices. Maecenas sed libero ipsum. Nam ac ipsum nisl. Phasellus aliquet vestibulum est, non euismod erat iaculis sed. Duis vel purus tristique, feugiat nisl id, dignissim augue. Morbi quis quam quis massa mattis hendrerit eu sodales neque. Aenean sollicitudin nulla sed leo eleifend eleifend. Cras posuere malesuada interdum.
+		section.my-work
+			.content
+				h1.
+					My work
+				hr
+				.wrapper
+					.gallery
+						+add-card
+						+add-card
+						+add-card
+						+add-card
+						+add-card
+						+add-card
+					.button-wrapper
+						a(class="waves-effect waves-light btn-large") More
+							i(class="material-icons right") work 
+		section.customers
+			.image-wrapper
+				.content
+					.wrapper

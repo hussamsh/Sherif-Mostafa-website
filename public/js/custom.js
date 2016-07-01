@@ -3,7 +3,20 @@
 
 $(document).ready(function() {
 
-	//$('.gallery').slick();
+
+
+$('.gallery').isotope({
+  itemSelector: '.cell',
+  layoutMode: 'cellsByRow',
+  cellsByRow: {
+    columnWidth: 500,
+    rowHeight: 550
+  },
+  masonryHorizontal: {
+    rowHeight: 110
+  }
+});
+//$('.gallery').slick();
     /*$('.gallery').slick({*/
         //// dots: true,
         //infinite: true,

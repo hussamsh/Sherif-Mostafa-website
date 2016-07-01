@@ -42,21 +42,16 @@ body #image1 {
 .services .content .wrapper {
   min-height: 50px;
 }
-.services .content .wrapper #description {
-  margin: 0;
-  padding: 0;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
+.services .content .wrapper h1 {
+  padding-top: 30px;
   width: 100%;
-  position: absolute;
-  margin-top: 25px;
+  text-align: center;
   font-size: 3em;
   font-weight: 400;
   font-family: 'Lobster', cursive;
 }
-.services .content hr {
-  margin-top: 50px;
+.services .content .wrapper hr {
+  margin-top: -5px;
   max-width: 300px;
   padding: 0;
   border: none;
@@ -64,7 +59,7 @@ body #image1 {
   color: #333;
   text-align: center;
 }
-.services .content hr:after {
+.services .content .wrapper hr:after {
   content: "✻";
   display: inline-block;
   position: relative;
@@ -72,6 +67,9 @@ body #image1 {
   font-size: 1.5em;
   padding: 0 0.25em;
   background: #fff;
+}
+.services .content .wrapper hr {
+  padding-bottom: 20px;
 }
 .services .content .service-wrapper {
   margin-top: 20px;
@@ -140,28 +138,18 @@ body #image1 {
   margin-top: 120px;
   width: 100%;
   height: 700px;
-  background: #f0f0e0;
+  background: #f7f4f4;
 }
 .about-me .content h1 {
   padding-top: 30px;
   width: 100%;
   text-align: center;
-  *zoom: 1;
   font-size: 3em;
   font-weight: 400;
   font-family: 'Lobster', cursive;
 }
-.about-me .content h1:before {
-  content: '';
-  display: table;
-}
-.about-me .content h1:after {
-  content: '';
-  display: table;
-  clear: both;
-}
 .about-me .content hr {
-  margin-top: -25px;
+  margin-top: -5px;
   max-width: 300px;
   padding: 0;
   border: none;
@@ -176,7 +164,7 @@ body #image1 {
   top: -0.7em;
   font-size: 1.5em;
   padding: 0 0.25em;
-  background: #f0f0e0;
+  background: #f7f4f4;
 }
 .about-me .content .wrapper .image-wrapper {
   width: calc(99.99% * 1/2 - (30px - 30px * 1/2));
@@ -207,10 +195,9 @@ body #image1 {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -230px 0 0 -250px;
+  margin: -230px 0 0 -100px;
 }
 .about-me .content .wrapper .personal-info {
-  background: #0074d9;
   height: 500px;
   width: calc(99.99% * 1/2 - (30px - 30px * 1/2));
 }
@@ -228,6 +215,89 @@ body #image1 {
 }
 .about-me .content .wrapper .personal-info:nth-child(2n + 1) {
   clear: left;
+}
+.about-me .content .wrapper .personal-info #title {
+  padding-top: 70px;
+  font-family: 'PT Serif', serif;
+}
+.about-me .content .wrapper .personal-info #description {
+  width: 70%;
+  font-family: 'Poppins', sans-serif;
+  color: #808080;
+}
+.my-work {
+  margin-top: 50px;
+  width: 100%;
+  height: 1200px;
+  margin-bottom: 150px;
+}
+.my-work .content h1 {
+  padding-top: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 400;
+  font-family: 'Lobster', cursive;
+}
+.my-work .content hr {
+  margin-top: -5px;
+  max-width: 300px;
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
+}
+.my-work .content hr:after {
+  content: "✻";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: #fff;
+}
+.my-work .content .wrapper {
+  margin-top: 30px;
+}
+.my-work .content .wrapper .gallery {
+  *zoom: 1;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.my-work .content .wrapper .gallery:before {
+  content: '';
+  display: table;
+}
+.my-work .content .wrapper .gallery:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.my-work .content .wrapper .gallery .card {
+  height: 500px;
+  width: 450px;
+}
+.my-work .content .button-wrapper {
+  width: 100%;
+}
+.my-work .content .button-wrapper .btn-large {
+  margin-left: 45%;
+  margin-bottom: 50px;
+}
+.customers .image-wrapper .content {
+  background: url("http://oshine.brandexponentscr.netdna-cdn.com/oshin/v8/wp-content/uploads/sites/8/2014/09/oshin-v8-stage-2.jpg");
+  width: 100%;
+  background-size: cover;
+  height: 500px;
+  margin-bottom: 100px;
+}
+.customers .image-wrapper .content .wrapper {
+  width: 100%;
+  height: 100%;
+  background: rgba(34,34,34,0.7);
 }
 
 /*# sourceMappingURL=app.css.map */
