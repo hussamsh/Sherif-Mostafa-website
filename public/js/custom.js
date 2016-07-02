@@ -4,6 +4,18 @@
 $(document).ready(function() {
 
 
+$('.achievements-gallery').isotope({
+  itemSelector: '.cell',
+  layoutMode: 'cellsByRow',
+  cellsByRow: {
+    columnWidth: 400,
+    rowHeight: 500
+  },
+  masonryHorizontal: {
+    rowHeight: 110
+  }
+});
+
 
 $('.gallery').isotope({
   itemSelector: '.cell',
@@ -15,6 +27,13 @@ $('.gallery').isotope({
   masonryHorizontal: {
     rowHeight: 110
   }
+});
+
+
+
+ $('.number').counterUp({
+	delay: 10,
+	time: 1000
 });
 //$('.gallery').slick();
     /*$('.gallery').slick({*/
@@ -64,5 +83,4 @@ $('.gallery').isotope({
             //}
         //}]
     //});
-
 });

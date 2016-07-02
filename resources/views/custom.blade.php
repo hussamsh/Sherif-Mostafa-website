@@ -8,15 +8,15 @@
     <link href="{{{ asset('/css/app.css') }}}" rel="stylesheet"/>
     <link href="{{{asset('/css/pe-icon-7-stroke/css/pe-icon-7-stroke.css')}}}" rel="stylesheet"/>
     <link href="{{{asset('/css/materialize.min.css')}}}" rel="stylesheet" media="screen,projection"/>
-    <link href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" rel="stylesheet"/>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script src="{{{asset('/js/isotope.pkgd.min.js')}}}"></script>
     <script src="{{{asset('/js/custom.js')}}}"></script>
     <script src="{{{asset('/js/cells-by-row.js')}}}"></script>
     <script src="{{{asset('/js/materialize.min.js')}}}"></script>
+    <script src="{{{asset('/js/jquery.waypoints.min.js')}}}"></script>
+    <script src="{{{asset('/js/jquery.counterup.min.js')}}}"></script>
   </head>
   <body>
     <div class="image" id="image1">
@@ -139,16 +139,44 @@
               <div class="card-action"><a href="#">Buy this study</a></div>
             </div>
           </div>
-          <div class="button-wrapper"><a class="waves-effect waves-light btn-large">More<i class="material-icons right">work </i></a></div>
+          <div class="button-wrapper"><a class="waves-effect waves-light btn-large">more<i class="material-icons right">work </i></a></div>
         </div>
       </div>
     </section>
-    <section class="customers">
-      <div class="image-wrapper">
-        <div class="content">
-          <div class="wrapper"></div>
+    <section class="achievements">
+      <div class="content">
+        <div class="wrapper">
+          <div class="achievements-gallery"><span class="cell">
+              <p class="number">550</p>
+              <p class="description">Studies</p></span><span class="cell">
+              <p class="number">400</p>
+              <p class="description">Satisfied Customers</p></span><span class="cell">
+              <p class="number">30</p>
+              <p class="description">Years of experince</p></span><span class="cell">
+              <p class="number">8</p>
+              <p class="description">
+                Awards
+                
+              </p></span></div>
         </div>
       </div>
+    </section>
+    <section class="contact-me">
+      <div class="content">
+        <h1>I would love to work with you</h1><a class="waves-effect waves-light btn-large">Contact me<i class="material-icons right">person</i></a>
+      </div>
+    </section>
+    <section class="footer-section">
+      <footer class="page-footer">
+        <div class="container">
+          <h5 class="white-text">Let's be friends</h5><a href="#"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a><a href="#"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+          <hr/>
+          <p class="text-lighten-4 grey-text">Website created and maintained with &#9829; by Hossam Sherif </p>
+        </div>
+        <div class="footer-copyright">
+          <div class="container"> &copy; 2016 Sherif Mostafa</div>
+        </div>
+      </footer>
     </section>
   </body>
 </html>

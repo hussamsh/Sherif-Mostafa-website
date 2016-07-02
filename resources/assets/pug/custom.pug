@@ -33,17 +33,17 @@ html(lang="en")
 		link(href='{{{asset(\'/css/pe-icon-7-stroke/css/pe-icon-7-stroke.css\')}}}', rel='stylesheet')
 		link(href='{{{asset(\'/css/materialize.min.css\')}}}', rel='stylesheet' , media="screen,projection")
 
-		link(href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css', rel='stylesheet')
-		link(href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css', rel='stylesheet')
 		link(href='http://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+		link(href='https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css', rel='stylesheet')
 
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
-		script(src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js')
 
 		script(src='{{{asset(\'/js/isotope.pkgd.min.js\')}}}')
 		script(src='{{{asset(\'/js/custom.js\')}}}')
 		script(src='{{{asset(\'/js/cells-by-row.js\')}}}')
 		script(src='{{{asset(\'/js/materialize.min.js\')}}}')
+		script(src='{{{asset(\'/js/jquery.waypoints.min.js\')}}}')
+		script(src='{{{asset(\'/js/jquery.counterup.min.js\')}}}')
 
 	body
 		.image#image1
@@ -107,9 +107,51 @@ html(lang="en")
 						+add-card
 						+add-card
 					.button-wrapper
-						a(class="waves-effect waves-light btn-large") More
+						a(class="waves-effect waves-light btn-large") more
 							i(class="material-icons right") work 
-		section.customers
-			.image-wrapper
-				.content
-					.wrapper
+		section.achievements
+			.content
+				.wrapper
+					.achievements-gallery
+						span.cell
+							p.number.
+								550
+							p.description.
+								Studies
+						span.cell
+							p.number.
+								400
+							p.description.
+								Satisfied Customers
+						span.cell
+							p.number.
+								30
+							p.description.
+								Years of experince
+						span.cell
+							p.number.
+								8
+							p.description.
+								Awards
+
+		section.contact-me
+			.content
+				h1.
+					I would love to work with you
+				a(class="waves-effect waves-light btn-large") Contact me
+					i(class="material-icons right") person
+
+		section.footer-section
+			footer.page-footer
+				.container
+						h5.white-text.
+							Let's be friends
+						a(href="#")
+							i(class="fa fa-facebook-square fa-3x" ,aria-hidden="true")
+						a(href="#")
+							i(class="fa fa-linkedin-square fa-3x" ,aria-hidden="true")
+						hr
+						p(class="text-lighten-4").grey-text.
+							Website created and maintained with &#9829; by Hossam Sherif 
+				.footer-copyright
+					.container  &copy; 2016 Sherif Mostafa
