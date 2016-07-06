@@ -18,7 +18,7 @@
     <script src="{{{asset('/js/jquery.waypoints.min.js')}}}"></script>
     <script src="{{{asset('/js/jquery.counterup.min.js')}}}"></script>
   </head>
-  <body>
+  <body> 
     <div class="image" id="image1">
       <div class="content">
         <div class="wrapper">
@@ -71,73 +71,21 @@
         <h1>My work</h1>
         <hr/>
         <div class="wrapper">
-          <div class="gallery">
+          <div class="gallery">@foreach($studies as $study)
             <div class="card cell">
-              <div class="card-image waves-effect waves-block waves-light"><img class="activator" src="https://images.unsplash.com/uploads/1413349410189e2a95d2e/39982a21?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;s=d4bd480137c8dd10d87051f6c33edbfc"/></div>
-              <div class="card-content"><span class="activator grey-text text-darken-4 card-title">Cement factory study</span>
-                <p>I am a very special card</p>
+              <div class="card-image waves-effect waves-block waves-light"><img class="activator" src="{{$study->image_url}}"/></div>
+              <div class="card-content"><span class="activator grey-text text-darken-4 card-title">{{$study->name}}</span>
+                <p>{{$study->short_description}}</p>
               </div>
-              <div class="card-reveal">
-                <div class="card-title grey-text text-darken-4">Second card title<i class="material-icons right">close</i></div>
-                <p>Here is some more information about this study</p>
-              </div>
-              <div class="card-action"><a href="#">Buy this study</a></div>
             </div>
+            @endforeach
+            @foreach($studies as $study)
             <div class="card cell">
-              <div class="card-image waves-effect waves-block waves-light"><img class="activator" src="https://images.unsplash.com/uploads/1413349410189e2a95d2e/39982a21?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;s=d4bd480137c8dd10d87051f6c33edbfc"/></div>
-              <div class="card-content"><span class="activator grey-text text-darken-4 card-title">Cement factory study</span>
-                <p>I am a very special card</p>
+              <div class="card-image waves-effect waves-block waves-light"><img class="activator" src="{{$study->image_url}}"/></div>
+              <div class="card-content"><span class="activator grey-text text-darken-4 card-title">{{$study->name}}</span>
+                <p>{{$study->short_description}}</p>
               </div>
-              <div class="card-reveal">
-                <div class="card-title grey-text text-darken-4">Second card title<i class="material-icons right">close</i></div>
-                <p>Here is some more information about this study</p>
-              </div>
-              <div class="card-action"><a href="#">Buy this study</a></div>
-            </div>
-            <div class="card cell">
-              <div class="card-image waves-effect waves-block waves-light"><img class="activator" src="https://images.unsplash.com/uploads/1413349410189e2a95d2e/39982a21?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;s=d4bd480137c8dd10d87051f6c33edbfc"/></div>
-              <div class="card-content"><span class="activator grey-text text-darken-4 card-title">Cement factory study</span>
-                <p>I am a very special card</p>
-              </div>
-              <div class="card-reveal">
-                <div class="card-title grey-text text-darken-4">Second card title<i class="material-icons right">close</i></div>
-                <p>Here is some more information about this study</p>
-              </div>
-              <div class="card-action"><a href="#">Buy this study</a></div>
-            </div>
-            <div class="card cell">
-              <div class="card-image waves-effect waves-block waves-light"><img class="activator" src="https://images.unsplash.com/uploads/1413349410189e2a95d2e/39982a21?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;s=d4bd480137c8dd10d87051f6c33edbfc"/></div>
-              <div class="card-content"><span class="activator grey-text text-darken-4 card-title">Cement factory study</span>
-                <p>I am a very special card</p>
-              </div>
-              <div class="card-reveal">
-                <div class="card-title grey-text text-darken-4">Second card title<i class="material-icons right">close</i></div>
-                <p>Here is some more information about this study</p>
-              </div>
-              <div class="card-action"><a href="#">Buy this study</a></div>
-            </div>
-            <div class="card cell">
-              <div class="card-image waves-effect waves-block waves-light"><img class="activator" src="https://images.unsplash.com/uploads/1413349410189e2a95d2e/39982a21?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;s=d4bd480137c8dd10d87051f6c33edbfc"/></div>
-              <div class="card-content"><span class="activator grey-text text-darken-4 card-title">Cement factory study</span>
-                <p>I am a very special card</p>
-              </div>
-              <div class="card-reveal">
-                <div class="card-title grey-text text-darken-4">Second card title<i class="material-icons right">close</i></div>
-                <p>Here is some more information about this study</p>
-              </div>
-              <div class="card-action"><a href="#">Buy this study</a></div>
-            </div>
-            <div class="card cell">
-              <div class="card-image waves-effect waves-block waves-light"><img class="activator" src="https://images.unsplash.com/uploads/1413349410189e2a95d2e/39982a21?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;s=d4bd480137c8dd10d87051f6c33edbfc"/></div>
-              <div class="card-content"><span class="activator grey-text text-darken-4 card-title">Cement factory study</span>
-                <p>I am a very special card</p>
-              </div>
-              <div class="card-reveal">
-                <div class="card-title grey-text text-darken-4">Second card title<i class="material-icons right">close</i></div>
-                <p>Here is some more information about this study</p>
-              </div>
-              <div class="card-action"><a href="#">Buy this study</a></div>
-            </div>
+            </div>@endforeach
           </div>
           <div class="button-wrapper"><a class="waves-effect waves-light btn-large">more<i class="material-icons right">work </i></a></div>
         </div>
@@ -154,10 +102,7 @@
               <p class="number">30</p>
               <p class="description">Years of experince</p></span><span class="cell">
               <p class="number">8</p>
-              <p class="description">
-                Awards
-                
-              </p></span></div>
+              <p class="description">Awards</p></span></div>
         </div>
       </div>
     </section>
@@ -169,7 +114,7 @@
     <section class="footer-section">
       <footer class="page-footer">
         <div class="container">
-          <h5 class="white-text">Let's be friends</h5><a href="#"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a><a href="#"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+          <h5 class="white-text">Let's be friends</h5><a href="https://www.facebook.com/sherio1963" target="_blank"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a><a href="#" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
           <hr/>
           <p class="text-lighten-4 grey-text">Website created and maintained with &#9829; by Hossam Sherif </p>
         </div>

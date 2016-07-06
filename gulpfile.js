@@ -1,10 +1,7 @@
 var elixir = require('laravel-elixir');
 require('laravel-elixir-pug');
 require('laravel-elixir-stylus');
-//require('laravel-elixir-stylus-bundle');
-var nib = require('nib');
-var axis = require('axis');
-var postStylus = require('poststylus'); 
+var postStylus = require('poststylus');
 var rupture = require('rupture');
 /*
  |--------------------------------------------------------------------------
@@ -23,6 +20,8 @@ elixir(function(mix) {
 	    pretty:true
     });
     //mix.stylusBundle();
-    mix.stylus('app.styl' ,null , {use:[nib() , axis() , rupture(), postStylus(['lost', 'autoprefixer'])]});
+
+    //mix.stylus('app.styl' ,null , {use:[rupture() , postStylus(['lost', 'autoprefixer'])]});
+    mix.stylus('study_overview.styl' ,null , {use:[rupture() , postStylus(['lost', 'autoprefixer'])]});
 });
 

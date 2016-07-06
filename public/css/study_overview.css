@@ -1,0 +1,153 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+body section.sidenav {
+  background: #f00;
+  height: 100%;
+  width: calc(99.99% * 1/4 - (30px - 30px * 1/4));
+}
+body section.sidenav:nth-child(1n) {
+  float: left;
+  margin-right: 30px;
+  clear: none;
+}
+body section.sidenav:last-child {
+  margin-right: 0;
+}
+body section.sidenav:nth-child(4n) {
+  margin-right: 0;
+  float: right;
+}
+body section.sidenav:nth-child(4n + 1) {
+  clear: left;
+}
+section.study-overview {
+  height: 100%;
+  width: calc(99.99% * 3/4 - (30px - 30px * 3/4));
+  margin-top: 40px;
+}
+section.study-overview:nth-child(1n) {
+  float: left;
+  margin-right: 30px;
+  clear: none;
+}
+section.study-overview:last-child {
+  margin-right: 0;
+}
+section.study-overview:nth-child(4n) {
+  margin-right: 0;
+  float: right;
+}
+section.study-overview:nth-child(4n + 1) {
+  clear: left;
+}
+section.study-overview .wrapper .study-details {
+  width: 100%;
+  height: calc(99.99% * 1/2 - (20px - 20px * 1/2));
+  margin-bottom: 20px;
+  height: 500px;
+}
+section.study-overview .wrapper .study-details:last-child {
+  margin-bottom: 0;
+}
+section.study-overview .wrapper .study-details .image-wrapper {
+  margin-left: 40px;
+  position: relative;
+  width: calc(99.99% * 1/3 - (30px - 30px * 1/3));
+  height: 400px;
+  width: 400px;
+}
+section.study-overview .wrapper .study-details .image-wrapper:nth-child(1n) {
+  float: left;
+  margin-right: 30px;
+  clear: none;
+}
+section.study-overview .wrapper .study-details .image-wrapper:last-child {
+  margin-right: 0;
+}
+section.study-overview .wrapper .study-details .image-wrapper:nth-child(3n) {
+  margin-right: 0;
+  float: right;
+}
+section.study-overview .wrapper .study-details .image-wrapper:nth-child(3n + 1) {
+  clear: left;
+}
+section.study-overview .wrapper .study-details .image-wrapper .card .image img {
+  height: 400px;
+  width: 400px;
+}
+section.study-overview .wrapper .study-details .study-variables {
+  width: calc(99.99% * 2/3 - (30px - 30px * 2/3));
+  height: 100%;
+}
+section.study-overview .wrapper .study-details .study-variables:nth-child(1n) {
+  float: left;
+  margin-right: 30px;
+  clear: none;
+}
+section.study-overview .wrapper .study-details .study-variables:last-child {
+  margin-right: 0;
+}
+section.study-overview .wrapper .study-details .study-variables:nth-child(3n) {
+  margin-right: 0;
+  float: right;
+}
+section.study-overview .wrapper .study-details .study-variables:nth-child(3n + 1) {
+  clear: left;
+}
+section.study-overview .wrapper .study-details .study-variables h1 {
+  font-family: 'PT Serif', serif;
+}
+section.study-overview .wrapper .study-details .study-variables hr {
+  max-width: 500px;
+  margin: 0px;
+}
+section.study-overview .wrapper .study-details .study-variables .study-info {
+  margin-top: 20px;
+}
+section.study-overview .wrapper .study-details .study-variables .study-info .price {
+  margin-bottom: 20px;
+}
+section.study-overview .wrapper .study-details .study-variables .study-info .price #price_amount {
+  color: #f00;
+  font-family: 'Lato', sans-serif;
+  font-size: 2em;
+}
+section.study-overview .wrapper .study-details .study-variables .study-info .field {
+  font-size: 0.85em;
+}
+section.study-overview .wrapper .study-description {
+  width: 100%;
+  height: calc(99.99% * 1/2 - (30px - 30px * 1/2));
+  margin-bottom: 30px;
+  width: 100%;
+  background: #f00;
+}
+section.study-overview .wrapper .study-description:last-child {
+  margin-bottom: 0;
+}
+section.study-overview .wrapper .study-description #tabs {
+  background: #00f;
+}
+section.study-overview .wrapper .study-description #tabs ul li {
+  background: #008000;
+  width: calc(99.99% * 1/5 - (30px - 30px * 1/5));
+}
+section.study-overview .wrapper .study-description #tabs ul li:nth-child(1n) {
+  float: left;
+  margin-right: 30px;
+  clear: none;
+}
+section.study-overview .wrapper .study-description #tabs ul li:last-child {
+  margin-right: 0;
+}
+section.study-overview .wrapper .study-description #tabs ul li:nth-child(5n) {
+  margin-right: 0;
+  float: right;
+}
+section.study-overview .wrapper .study-description #tabs ul li:nth-child(5n + 1) {
+  clear: left;
+}
+
+/*# sourceMappingURL=study_overview.css.map */

@@ -3,7 +3,7 @@
 
 $(document).ready(function() {
 
-
+//Achievment gallery
 $('.achievements-gallery').isotope({
   itemSelector: '.cell',
   layoutMode: 'cellsByRow',
@@ -17,12 +17,13 @@ $('.achievements-gallery').isotope({
 });
 
 
+//Work gallery
 $('.gallery').isotope({
   itemSelector: '.cell',
   layoutMode: 'cellsByRow',
   cellsByRow: {
-    columnWidth: 500,
-    rowHeight: 550
+    columnWidth: 400,
+    rowHeight: 450
   },
   masonryHorizontal: {
     rowHeight: 110

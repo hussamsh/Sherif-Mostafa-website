@@ -5,7 +5,7 @@ body {
 body #image1 {
   display: table;
   width: 100%;
-  height: 100%;
+  height: 50%;
   background: url("https://images.unsplash.com/photo-1461016951828-c09537329b3a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=7777e79b0b2c539d64f1f356d09ed136");
   background-size: cover;
   background-position: center center;
@@ -18,7 +18,7 @@ body #image1 {
   vertical-align: middle;
   width: 100%;
   position: absolute;
-  top: 33%;
+  top: 15%;
 }
 .image .wrapper h1 {
   font-family: 'PT Serif', serif;
@@ -187,7 +187,7 @@ body #image1 {
   clear: left;
 }
 .about-me .content .wrapper .image-wrapper .personal-image {
-  background: url("https://scontent-cai1-1.xx.fbcdn.net/v/t1.0-9/398700_10150569884171255_1374290592_n.jpg?oh=31982b80bb347307b01731f22127b102&oe=57EABBF6");
+  background: url("https://lh3.googleusercontent.com/sk5vlvAQyUNL6QQ_JWwH90wWKrqtKsFCMV1HkSXcXFvqAVwZ7Yj3DnlIGOA1dT_pxvFnSm5AAFMuFX_NQX6ymZ3gSa8HDCAJNlYpeNq9Jofzz6cGETA_Cuw2iRpy_Yr8M6JBED9uvXDTBloK-cbpe1zucXWrqSHDr1O42e3bex749_ic_dEUnzQssXx01PhQxnHN4wmAudJIpW2ANLnrpRz1vd4wMcppO0vW1FqtRB0YxVIcQgEht94QH2WZQFDmmgUJKPT9-RmgBVGDt_v4b-fz3qOUquhYAOjR2oDF40QxLrZC9NuwCJRQQ5M2-J3ib1hkVx8WrxRfDAinl73EiqbMCedVzdbgI1NZB1BgmCcvRVSt-0D7jxjSqrZHsE_fgF5zx8KpJImKBjsA4hVw6_6PGBGRS8kQ2yTNUF_eTFGZ3X9C-QZ3QFfsEmXJCEot8ICLIPlTDcbfFss4arN66vz0rSja8FH8_bxHxsGt0ElYnYdgVBWEmsp74EeGbom-Dgm6opOnNKp_h9si1K97XG7UTveYN0sETLQ8ZiLsHkXx8uWZsRHTAe_MA_Q_RsnkwRqpvs0A7XuSE1TA5JeBd31cniKGIQ=w493-h720-no");
   height: 500px;
   width: 500px;
   border-radius: 50%;
@@ -229,7 +229,6 @@ body #image1 {
   margin-top: 50px;
   width: 100%;
   height: 1200px;
-  margin-bottom: 150px;
 }
 .my-work .content h1 {
   padding-top: 20px;
@@ -262,7 +261,7 @@ body #image1 {
 }
 .my-work .content .wrapper .gallery {
   *zoom: 1;
-  max-width: 1500px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -277,19 +276,23 @@ body #image1 {
   clear: both;
 }
 .my-work .content .wrapper .gallery .card {
-  height: 500px;
-  width: 450px;
+  height: 400px;
+  width: 350px;
 }
 .my-work .content .wrapper .gallery .card .card-action {
   text-align: center;
 }
+.my-work .content .wrapper .gallery .card .card-image img {
+  height: 250px;
+  background-size: cover;
+}
 .my-work .content .button-wrapper {
   width: 100%;
+  margin-top: 25px;
 }
 .my-work .content .button-wrapper .btn-large {
   background: #ffab00;
   margin-left: 45%;
-  margin-bottom: 50px;
 }
 .achievements .content {
   background: url("http://oshine.brandexponentscr.netdna-cdn.com/oshin/v8/wp-content/uploads/sites/8/2014/09/oshin-v8-stage-2.jpg");
@@ -300,7 +303,7 @@ body #image1 {
 .achievements .content .wrapper {
   width: 100%;
   height: 100%;
-  background: rgba(34,34,34,0.7);
+  background: rgba(0,0,0,0.7);
 }
 .achievements .content .wrapper .achievements-gallery {
   *zoom: 1;
