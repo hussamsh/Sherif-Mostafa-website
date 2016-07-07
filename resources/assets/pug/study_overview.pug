@@ -6,23 +6,32 @@ html
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		link(href='{{{ asset(\'/css/study_overview.css\') }}}', rel='stylesheet')
 		link(href='{{{ asset(\'/dist/semantic.min.css\') }}}', rel='stylesheet')
-		link(href='{{{ asset(\'/css/responsive-tabs.css\') }}}', rel='stylesheet')
 
-		link(href='https://fonts.googleapis.com/css?family=Poppins|PT+Serif:700italic|Lobster|Lato:900', rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css?family=Poppins|Merriweather:300|Lobster|Lato:900', rel='stylesheet')
 
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
 		script(src='{{{asset(\'/dist/semantic.min.js\')}}}')
-		script(src='{{{asset(\'/js/jquery.responsiveTabs.min.js\')}}}')
 		script(src='{{{asset(\'/js/study_overview.js\')}}}')
-
+		
 		body
-			section.sidenav
-				.content
+			section.nav-bar
+				div(class="ui visible sidebar inverted top")
 					.wrapper
+						div(class="dummy").side-bar-item
+						.main-header.side-bar-item
+							h1.
+								Sherif Mostafa
+						div(class="ui secondary three item menu nav-elements").side-bar-item
+							a.item.
+								About me
+							a.item.
+								My work
+							a.item.
+								My services
 			section.study-overview
 				.content
-					.wrapper
-						.study-details
+					.study-details
+						.wrapper
 							.image-wrapper
 								div(class="ui fluid card")
 									.image
@@ -32,36 +41,22 @@ html
 									{{$study->name}} Study
 								hr
 								.study-info
-									.price
-										p.field price
-										span(id="price_amount").info ${{$study->base_price}}
-									p.field Study field:
-										span.info Construction
-									p.field Study country: 
-										span.info Egypt , Saudi Arabia , UAE , Middle east
-						.study-description
-							#tabs
-								ul
-									li(class="")
-										a(href="#tab-1").
-											Tab 1
-									li(class="")
-										a(href="#tab-2").
-											Tab 2
-									li(class="")
-										a(href="#tab-3").
-											Tab 3
-									li(class="")
-										a(href="#tab-4").
-											Tab 3
-									li(class="")
-										a(href="#tab-5").
-											Tab 3																											
-								#tab-1.
-									This is a description of the study for testing purposes
-								#tab-2.
-									This is an abstract of the study
-								#tab-3.
-									Target Audience of the study are these awesome people 
-								#tab-4.
-									Theses are the porducts that this project serves with thier description
+									p.
+										{{$study->short_description}}
+									h1#price.
+										${{$study->base_price}}
+									p#disclaimer.
+										* This is a base price, study price may vary depeding on indvidual client needs
+									div(class="ui animated fade orange button")
+										div(class="visible content").
+											Buy this study
+										div(class="hidden content").
+											Contact Me !
+					.study-description
+						.wrapper
+							.header-wrapper
+								h1.
+									ABOUT THIS STUDY :
+							hr
+
+							

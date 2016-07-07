@@ -2,152 +2,191 @@ body {
   padding: 0;
   margin: 0;
 }
-body section.sidenav {
-  background: #f00;
-  height: 100%;
-  width: calc(99.99% * 1/4 - (30px - 30px * 1/4));
+body section.nav-bar {
+  margin: 0;
+  padding: 0;
 }
-body section.sidenav:nth-child(1n) {
+body section.nav-bar .wrapper {
+  background: #fff;
+  overflow: hidden;
+}
+body section.nav-bar .wrapper .side-bar-item {
+  margin: 0;
+  height: 65px;
+  width: calc(99.99% * 1/3 - (30px - 30px * 1/3));
+}
+body section.nav-bar .wrapper .side-bar-item:nth-child(1n) {
   float: left;
   margin-right: 30px;
   clear: none;
 }
-body section.sidenav:last-child {
+body section.nav-bar .wrapper .side-bar-item:last-child {
   margin-right: 0;
 }
-body section.sidenav:nth-child(4n) {
+body section.nav-bar .wrapper .side-bar-item:nth-child(3n) {
   margin-right: 0;
   float: right;
 }
-body section.sidenav:nth-child(4n + 1) {
+body section.nav-bar .wrapper .side-bar-item:nth-child(3n + 1) {
   clear: left;
+}
+body section.nav-bar .wrapper .main-header {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+body section.nav-bar .wrapper .main-header h1 {
+  font-family: 'Lobster', serif;
 }
 section.study-overview {
   height: 100%;
-  width: calc(99.99% * 3/4 - (30px - 30px * 3/4));
-  margin-top: 40px;
 }
-section.study-overview:nth-child(1n) {
-  float: left;
-  margin-right: 30px;
-  clear: none;
-}
-section.study-overview:last-child {
-  margin-right: 0;
-}
-section.study-overview:nth-child(4n) {
-  margin-right: 0;
-  float: right;
-}
-section.study-overview:nth-child(4n + 1) {
-  clear: left;
-}
-section.study-overview .wrapper .study-details {
+section.study-overview .content .study-details {
+  background: #ede8de;
   width: 100%;
   height: calc(99.99% * 1/2 - (20px - 20px * 1/2));
   margin-bottom: 20px;
-  height: 500px;
+  height: 600px;
 }
-section.study-overview .wrapper .study-details:last-child {
+section.study-overview .content .study-details:last-child {
   margin-bottom: 0;
 }
-section.study-overview .wrapper .study-details .image-wrapper {
+section.study-overview .content .study-details .wrapper {
+  *zoom: 1;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+}
+section.study-overview .content .study-details .wrapper:before {
+  content: '';
+  display: table;
+}
+section.study-overview .content .study-details .wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+section.study-overview .content .study-details .wrapper .image-wrapper {
   margin-left: 40px;
   position: relative;
   width: calc(99.99% * 1/3 - (30px - 30px * 1/3));
   height: 400px;
   width: 400px;
 }
-section.study-overview .wrapper .study-details .image-wrapper:nth-child(1n) {
+section.study-overview .content .study-details .wrapper .image-wrapper:nth-child(1n) {
   float: left;
   margin-right: 30px;
   clear: none;
 }
-section.study-overview .wrapper .study-details .image-wrapper:last-child {
+section.study-overview .content .study-details .wrapper .image-wrapper:last-child {
   margin-right: 0;
 }
-section.study-overview .wrapper .study-details .image-wrapper:nth-child(3n) {
+section.study-overview .content .study-details .wrapper .image-wrapper:nth-child(3n) {
   margin-right: 0;
   float: right;
 }
-section.study-overview .wrapper .study-details .image-wrapper:nth-child(3n + 1) {
+section.study-overview .content .study-details .wrapper .image-wrapper:nth-child(3n + 1) {
   clear: left;
 }
-section.study-overview .wrapper .study-details .image-wrapper .card .image img {
+section.study-overview .content .study-details .wrapper .image-wrapper .card .image img {
   height: 400px;
   width: 400px;
 }
-section.study-overview .wrapper .study-details .study-variables {
+section.study-overview .content .study-details .wrapper .study-variables {
+  margin-left: 20px;
   width: calc(99.99% * 2/3 - (30px - 30px * 2/3));
-  height: 100%;
+  max-width: 500;
+  height: 400px;
+  margin-top: 50px;
 }
-section.study-overview .wrapper .study-details .study-variables:nth-child(1n) {
+section.study-overview .content .study-details .wrapper .study-variables:nth-child(1n) {
   float: left;
   margin-right: 30px;
   clear: none;
 }
-section.study-overview .wrapper .study-details .study-variables:last-child {
+section.study-overview .content .study-details .wrapper .study-variables:last-child {
   margin-right: 0;
 }
-section.study-overview .wrapper .study-details .study-variables:nth-child(3n) {
+section.study-overview .content .study-details .wrapper .study-variables:nth-child(3n) {
   margin-right: 0;
   float: right;
 }
-section.study-overview .wrapper .study-details .study-variables:nth-child(3n + 1) {
+section.study-overview .content .study-details .wrapper .study-variables:nth-child(3n + 1) {
   clear: left;
 }
-section.study-overview .wrapper .study-details .study-variables h1 {
-  font-family: 'PT Serif', serif;
+section.study-overview .content .study-details .wrapper .study-variables h1 {
+  font-family: 'Merriweather', serif;
+  color: #333;
 }
-section.study-overview .wrapper .study-details .study-variables hr {
+section.study-overview .content .study-details .wrapper .study-variables hr {
   max-width: 500px;
   margin: 0px;
 }
-section.study-overview .wrapper .study-details .study-variables .study-info {
+section.study-overview .content .study-details .wrapper .study-variables .study-info {
   margin-top: 20px;
 }
-section.study-overview .wrapper .study-details .study-variables .study-info .price {
-  margin-bottom: 20px;
+section.study-overview .content .study-details .wrapper .study-variables .study-info p {
+  color: #808080;
+  font-size: 1.1em;
 }
-section.study-overview .wrapper .study-details .study-variables .study-info .price #price_amount {
-  color: #f00;
-  font-family: 'Lato', sans-serif;
-  font-size: 2em;
+section.study-overview .content .study-details .wrapper .study-variables .study-info h1#price {
+  margin-top: 30px;
+  font-family: 'Poppins', serif;
+  font-size: 3.5em;
 }
-section.study-overview .wrapper .study-details .study-variables .study-info .field {
-  font-size: 0.85em;
+section.study-overview .content .study-details .wrapper .study-variables .study-info p#disclaimer {
+  font-size: 0.8em;
 }
-section.study-overview .wrapper .study-description {
+section.study-overview .content .study-details .wrapper .study-variables .study-info .button {
+  margin-top: 15px;
+}
+section.study-overview .content .study-description {
   width: 100%;
   height: calc(99.99% * 1/2 - (30px - 30px * 1/2));
   margin-bottom: 30px;
   width: 100%;
-  background: #f00;
 }
-section.study-overview .wrapper .study-description:last-child {
+section.study-overview .content .study-description:last-child {
   margin-bottom: 0;
 }
-section.study-overview .wrapper .study-description #tabs {
-  background: #00f;
+section.study-overview .content .study-description .wrapper {
+  padding-top: 80px;
+  *zoom: 1;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
-section.study-overview .wrapper .study-description #tabs ul li {
-  background: #008000;
-  width: calc(99.99% * 1/5 - (30px - 30px * 1/5));
+section.study-overview .content .study-description .wrapper:before {
+  content: '';
+  display: table;
 }
-section.study-overview .wrapper .study-description #tabs ul li:nth-child(1n) {
-  float: left;
-  margin-right: 30px;
-  clear: none;
+section.study-overview .content .study-description .wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
 }
-section.study-overview .wrapper .study-description #tabs ul li:last-child {
-  margin-right: 0;
+section.study-overview .content .study-description .wrapper .header-wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  max-width: 250px;
 }
-section.study-overview .wrapper .study-description #tabs ul li:nth-child(5n) {
-  margin-right: 0;
-  float: right;
+section.study-overview .content .study-description .wrapper .header-wrapper h1 {
+  font-family: 'Lato', serif;
+  color: #808080;
+  font-size: 1.5em;
+  text-align: left;
 }
-section.study-overview .wrapper .study-description #tabs ul li:nth-child(5n + 1) {
-  clear: left;
+section.study-overview .content .study-description .wrapper hr {
+  margin-left: 150px;
+  max-width: 70px;
 }
 
 /*# sourceMappingURL=study_overview.css.map */
