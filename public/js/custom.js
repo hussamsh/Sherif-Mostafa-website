@@ -3,6 +3,19 @@
 
 $(document).ready(function() {
 
+//Work gallery
+$('.gallery').isotope({
+  itemSelector: '.cell',
+  layoutMode: 'cellsByRow',
+  cellsByRow: {
+    columnWidth: 400,
+    rowHeight: 550
+  },
+  masonryHorizontal: {
+    rowHeight: 110
+  }
+});
+
 //Achievment gallery
 $('.achievements-gallery').isotope({
   itemSelector: '.cell',
@@ -17,18 +30,6 @@ $('.achievements-gallery').isotope({
 });
 
 
-//Work gallery
-$('.gallery').isotope({
-  itemSelector: '.cell',
-  layoutMode: 'cellsByRow',
-  cellsByRow: {
-    columnWidth: 400,
-    rowHeight: 450
-  },
-  masonryHorizontal: {
-    rowHeight: 110
-  }
-});
 
 
 

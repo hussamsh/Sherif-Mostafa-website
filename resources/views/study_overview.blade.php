@@ -16,9 +16,9 @@
           <div class="wrapper">
             <div class="dummy side-bar-item"></div>
             <div class="main-header side-bar-item">
-              <h1>Sherif Mostafa</h1>
+              <h1><a href="#">Sherif Mostafa</a></h1>
             </div>
-            <div class="ui secondary three item menu nav-elements side-bar-item"><a class="item">About me</a><a class="item">My work</a><a class="item">My services</a></div>
+            <div class="ui secondary four item menu nav-elements side-bar-item"><a class="item">About me</a><a class="item">My work</a><a class="item">My services</a><a class="item">Contact me</a></div>
           </div>
         </div>
       </section>
@@ -38,7 +38,7 @@
                   <p>{{$study->short_description}}</p>
                   <h1 id="price">${{$study->base_price}}</h1>
                   <p id="disclaimer">* This is a base price, study price may vary depeding on indvidual client needs</p>
-                  <div class="ui animated fade orange button">
+                  <div class="ui animated fade orange big button">
                     <div class="visible content">Buy this study</div>
                     <div class="hidden content">Contact Me !</div>
                   </div>
@@ -49,9 +49,25 @@
           <div class="study-description">
             <div class="wrapper">
               <div class="header-wrapper">
-                <h1>ABOUT THIS STUDY :</h1>
+                <h2>ABOUT THIS STUDY</h2>
               </div>
               <hr/>
+              <div class="main-content">
+                <h3>OVERVIEW</h3>
+                <p class="details">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus mauris nisi. Maecenas sit amet semper ipsum, ac tempor dolor. Phasellus tempus convallis quam at consectetur. Cras ut dolor mauris. Aliquam erat volutpat. Morbi quis semper dui, id elementum elit. Aenean id enim fermentum, dapibus dui finibus, convallis ipsum. Morbi tincidunt congue libero at dignissim. Integer non mi at sem porttitor laoreet. Mauris vel elit iaculis, finibus nisi ultrices, placerat dolor. Curabitur venenatis pellentesque metus, eu dapibus augue volutpat eu. Morbi eu vulputate enim, pharetra feugiat mauris. Etiam quis ultrices ligula, quis rutrum quam. Integer lacinia non lacus ut faucibus.
+                  Curabitur augue augue, gravida non aliquam ac, luctus at sem. Ut eleifend sed lectus nec tempor. Integer varius dolor sit amet aliquam ullamcorper. Suspendisse placerat odio metus, id interdum quam varius et. Nam accumsan dapibus tempus. Maecenas ipsum ipsum, aliquet sed condimentum vitae, lobortis quis metus. Mauris massa justo, pretium ut venenatis id, facilisis nec diam. Sed posuere, erat at rhoncus pellentesque, felis felis egestas sapien, feugiat cursus magna eros dignissim neque. Aenean faucibus porttitor odio non egestas. Aliquam erat volutpat. Sed rutrum turpis sapien, eu mattis sapien lacinia ac.
+                </p>
+                <h3>PRODUCTS/SERVICES OFFERED</h3>
+                <ul class="details">
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                  <li>Aliquam rhoncus arcu nec euismod finibus.</li>
+                  <li>Ut tempus lectus vitae sodales varius.</li>
+                </ul>
+                <h3>TARGET AUDIENCE</h3>
+                <p class="details"> Fusce maximus mauris nisi. Maecenas sit amet semper ipsum, ac tempor dolor. Phasellus tempus convallis quam at consectetur.</p>
+                <h3>STUDY INDEX</h3>
+              </div>
             </div>
           </div>
         </div>

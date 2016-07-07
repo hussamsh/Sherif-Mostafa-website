@@ -21,7 +21,7 @@ elixir(function(mix) {
     });
     //mix.stylusBundle();
 
-    //mix.stylus('app.styl' ,null , {use:[rupture() , postStylus(['lost', 'autoprefixer'])]});
+    mix.stylus('app.styl' ,null , {use:[rupture() , postStylus(['lost', 'autoprefixer'])]});
     mix.stylus('study_overview.styl' ,null , {use:[rupture() , postStylus(['lost', 'autoprefixer'])]});
 });
 

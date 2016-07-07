@@ -19,15 +19,18 @@ html
 					.wrapper
 						div(class="dummy").side-bar-item
 						.main-header.side-bar-item
-							h1.
-								Sherif Mostafa
-						div(class="ui secondary three item menu nav-elements").side-bar-item
+							h1
+								a(href="#").
+									Sherif Mostafa
+						div(class="ui secondary four item menu nav-elements").side-bar-item
 							a.item.
 								About me
 							a.item.
 								My work
 							a.item.
 								My services
+							a.item.
+								Contact me
 			section.study-overview
 				.content
 					.study-details
@@ -47,7 +50,7 @@ html
 										${{$study->base_price}}
 									p#disclaimer.
 										* This is a base price, study price may vary depeding on indvidual client needs
-									div(class="ui animated fade orange button")
+									div(class="ui animated fade orange big button")
 										div(class="visible content").
 											Buy this study
 										div(class="hidden content").
@@ -55,8 +58,27 @@ html
 					.study-description
 						.wrapper
 							.header-wrapper
-								h1.
-									ABOUT THIS STUDY :
+								h2.
+									ABOUT THIS STUDY
 							hr
-
-							
+							.main-content
+								h3.
+									OVERVIEW
+								p.details.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus mauris nisi. Maecenas sit amet semper ipsum, ac tempor dolor. Phasellus tempus convallis quam at consectetur. Cras ut dolor mauris. Aliquam erat volutpat. Morbi quis semper dui, id elementum elit. Aenean id enim fermentum, dapibus dui finibus, convallis ipsum. Morbi tincidunt congue libero at dignissim. Integer non mi at sem porttitor laoreet. Mauris vel elit iaculis, finibus nisi ultrices, placerat dolor. Curabitur venenatis pellentesque metus, eu dapibus augue volutpat eu. Morbi eu vulputate enim, pharetra feugiat mauris. Etiam quis ultrices ligula, quis rutrum quam. Integer lacinia non lacus ut faucibus.
+									Curabitur augue augue, gravida non aliquam ac, luctus at sem. Ut eleifend sed lectus nec tempor. Integer varius dolor sit amet aliquam ullamcorper. Suspendisse placerat odio metus, id interdum quam varius et. Nam accumsan dapibus tempus. Maecenas ipsum ipsum, aliquet sed condimentum vitae, lobortis quis metus. Mauris massa justo, pretium ut venenatis id, facilisis nec diam. Sed posuere, erat at rhoncus pellentesque, felis felis egestas sapien, feugiat cursus magna eros dignissim neque. Aenean faucibus porttitor odio non egestas. Aliquam erat volutpat. Sed rutrum turpis sapien, eu mattis sapien lacinia ac.
+								h3.
+									PRODUCTS/SERVICES OFFERED
+								ul.details
+									li.
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									li.
+										Aliquam rhoncus arcu nec euismod finibus.
+									li.
+										Ut tempus lectus vitae sodales varius.
+								h3.
+									TARGET AUDIENCE
+								p.details.
+									 Fusce maximus mauris nisi. Maecenas sit amet semper ipsum, ac tempor dolor. Phasellus tempus convallis quam at consectetur.
+								h3.
+									STUDY INDEX
