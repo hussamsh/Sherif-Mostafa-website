@@ -10,13 +10,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="{{{asset('/dist/semantic.min.js')}}}"></script>
     <script src="{{{asset('/js/study_overview.js')}}}"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
     <body>
       <section class="nav-bar">
         <div class="ui visible sidebar inverted top">
           <div class="wrapper">
             <div class="dummy side-bar-item"></div>
             <div class="main-header side-bar-item">
-              <h1><a href="#">Sherif Mostafa</a></h1>
+              <h1><a href="{{action('PagesController@about')}}">Sherif Mostafa</a></h1>
             </div>
             <div class="ui secondary four item menu nav-elements side-bar-item"><a class="item">About me</a><a class="item">My work</a><a class="item">My services</a><a class="item">Contact me</a></div>
           </div>

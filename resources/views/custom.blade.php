@@ -4,7 +4,7 @@
     <title>My title is awesome</title>
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link href="https://fonts.googleapis.com/css?family=Poppins|Cormorant+SC|PT+Serif:700italic|Lobster" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:700i|Merriweather|Lobster|Lato" rel="stylesheet"/>
     <link href="{{{ asset('/css/app.css') }}}" rel="stylesheet"/>
     <link href="{{{asset('/css/pe-icon-7-stroke/css/pe-icon-7-stroke.css')}}}" rel="stylesheet"/>
     <link href="{{{asset('/css/materialize.min.css')}}}" rel="stylesheet" media="screen,projection"/>
@@ -73,16 +73,16 @@
         <div class="wrapper">
           <div class="gallery">@foreach($studies as $study)
             <div class="card cell">
-              <div class="card-image waves-effect waves-block waves-light"><img class="activator" src="{{$study->image_url}}"/></div>
-              <div class="card-content"><span class="activator grey-text text-darken-4 card-title">{{$study->name}}</span>
+              <div class="card-image waves-effect waves-block waves-light"><a href="{{action('PagesController@studyOverview' , 1)}}"><img class="activator" src="{{$study->image_url}}"/></a></div>
+              <div class="card-content"><a href="{{action('PagesController@studyOverview' , 1)}}"><span class="activator grey-text text-darken-4 card-title">{{$study->name}}</span></a>
                 <p>{{$study->short_description}}</p>
               </div>
             </div>
             @endforeach
             @foreach($studies as $study)
             <div class="card cell">
-              <div class="card-image waves-effect waves-block waves-light"><img class="activator" src="{{$study->image_url}}"/></div>
-              <div class="card-content"><span class="activator grey-text text-darken-4 card-title">{{$study->name}}</span>
+              <div class="card-image waves-effect waves-block waves-light"><a href="{{action('PagesController@studyOverview' , 1)}}"><img class="activator" src="{{$study->image_url}}"/></a></div>
+              <div class="card-content"><a href="{{action('PagesController@studyOverview' , 1)}}"><span class="activator grey-text text-darken-4 card-title">{{$study->name}}</span></a>
                 <p>{{$study->short_description}}</p>
               </div>
             </div>@endforeach

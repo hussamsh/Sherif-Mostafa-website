@@ -2,10 +2,12 @@
 mixin add-study-card
 	.card(class="cell")
 		.card-image(class="waves-effect waves-block waves-light")
-			img(src!="{{$study->image_url}}").activator
+			a(href!="{{action('PagesController@studyOverview' , 1)}}")
+				img(src!="{{$study->image_url}}").activator
 		.card-content
-			span(class="activator grey-text text-darken-4").card-title.
-				{{$study->name}}
+			a(href="{{action('PagesController@studyOverview' , 1)}}")
+				span(class="activator grey-text text-darken-4").card-title.
+					{{$study->name}}
 			p.
 				{{$study->short_description}}
 mixin section-title(name)
@@ -19,7 +21,7 @@ html(lang="en")
 		meta(name='description', content='')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 
-		link(href='https://fonts.googleapis.com/css?family=Poppins|Cormorant+SC|PT+Serif:700italic|Lobster', rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css?family=PT+Serif:700i|Merriweather|Lobster|Lato', rel='stylesheet')
 
 		link(href='{{{ asset(\'/css/app.css\') }}}', rel='stylesheet')
 		link(href='{{{asset(\'/css/pe-icon-7-stroke/css/pe-icon-7-stroke.css\')}}}', rel='stylesheet')

@@ -36,7 +36,7 @@ body #image1 {
 }
 .image .wrapper h3 {
   color: #fff;
-  font-family: 'Cormorant SC', serif;
+  font-family: 'Merriweather', serif;
   font-size: 2em;
 }
 .services .content .wrapper {
@@ -120,13 +120,13 @@ body #image1 {
   }
 }
 .services .content .service-wrapper .service h3 {
-  font-family: 'Cormorant SC', serif;
+  font-family: 'Merriweather', serif;
   text-align: center;
   width: 100%;
   font-size: 2em;
 }
 .services .content .service-wrapper .service p {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #808080;
 }
 .services .content .service-wrapper .service i {
@@ -222,7 +222,7 @@ body #image1 {
 }
 .about-me .content .wrapper .personal-info #description {
   width: 70%;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #808080;
 }
 .my-work {
@@ -279,8 +279,11 @@ body #image1 {
   height: 500px;
   width: 350px;
 }
-.my-work .content .wrapper .gallery .card .card-action {
-  text-align: center;
+.my-work .content .wrapper .gallery .card .card-title {
+  font-family: 'Merriweather', serif;
+}
+.my-work .content .wrapper .gallery .card .card-content p {
+  color: #808080;
 }
 .my-work .content .wrapper .gallery .card .card-image img {
   height: 250px;
@@ -323,14 +326,14 @@ body #image1 {
   clear: both;
 }
 .achievements .content .wrapper .achievements-gallery p.number {
-  font-family: 'Poppins', serif;
+  font-family: 'Lato', serif;
   font-size: 5em;
   color: #fff;
   text-align: center;
   padding-top: 60px;
 }
 .achievements .content .wrapper .achievements-gallery p.description {
-  font-family: 'Cormorant SC', serif;
+  font-family: 'Merriweather', serif;
   color: #fff;
   text-align: center;
   font-size: 2em;

@@ -12,6 +12,7 @@ html
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
 		script(src='{{{asset(\'/dist/semantic.min.js\')}}}')
 		script(src='{{{asset(\'/js/study_overview.js\')}}}')
+		script(src='//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js')
 		
 		body
 			section.nav-bar
@@ -20,7 +21,7 @@ html
 						div(class="dummy").side-bar-item
 						.main-header.side-bar-item
 							h1
-								a(href="#").
+								a(href!="{{action('PagesController@about')}}").
 									Sherif Mostafa
 						div(class="ui secondary four item menu nav-elements").side-bar-item
 							a.item.
