@@ -9,9 +9,6 @@ $(document).ready(function() {
 	  cellsByRow: {
 	    columnWidth: 400,
 	    rowHeight: 550
-	  },
-	  masonryHorizontal: {
-	    rowHeight: 110
 	  }
 	});
 
@@ -22,9 +19,6 @@ $(document).ready(function() {
 	  cellsByRow: {
 	    columnWidth: 400,
 	    rowHeight: 500
-	  },
-	  masonryHorizontal: {
-	    rowHeight: 110
 	  }
 	});
 

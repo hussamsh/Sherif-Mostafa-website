@@ -23,17 +23,17 @@ html(lang="en")
 
 		link(href='https://fonts.googleapis.com/css?family=PT+Serif:700i|Merriweather|Lobster|Lato', rel='stylesheet')
 
-		link(href='{{{ asset(\'/css/app.css\') }}}', rel='stylesheet')
+		link(href='{{{ asset(\'/css/about.css\') }}}', rel='stylesheet')
 		link(href='{{{asset(\'/css/pe-icon-7-stroke/css/pe-icon-7-stroke.css\')}}}', rel='stylesheet')
 		link(href='{{{asset(\'/css/materialize.min.css\')}}}', rel='stylesheet' , media="screen,projection")
 
 		link(href='http://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
 		link(href='https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css', rel='stylesheet')
-
+		
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
 
 		script(src='{{{asset(\'/js/isotope.pkgd.min.js\')}}}')
-		script(src='{{{asset(\'/js/custom.js\')}}}')
+		script(src='{{{asset(\'/js/about.js\')}}}')
 		script(src='{{{asset(\'/js/cells-by-row.js\')}}}')
 		script(src='{{{asset(\'/js/materialize.min.js\')}}}')
 		script(src='{{{asset(\'/js/jquery.waypoints.min.js\')}}}')
@@ -94,9 +94,6 @@ html(lang="en")
 				hr
 				.wrapper
 					.gallery
-						| @foreach($studies as $study)
-						+add-study-card
-						| @endforeach
 						| @foreach($studies as $study)
 						+add-study-card
 						| @endforeach

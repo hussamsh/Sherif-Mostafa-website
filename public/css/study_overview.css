@@ -62,7 +62,7 @@ section.study-overview .content .study-details .wrapper {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 100px;
+  padding-top: 65px;
 }
 section.study-overview .content .study-details .wrapper:before {
   content: '';

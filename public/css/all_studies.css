@@ -1,0 +1,44 @@
+body .site-content {
+  *zoom: 1;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body .site-content:before {
+  content: '';
+  display: table;
+}
+body .site-content:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+body .site-content h1 {
+  margin-bottom: 5;
+  font-family: 'PT Serif', serif;
+  padding-top: 70px;
+}
+body .site-content hr {
+  margin: 0;
+  max-width: 40px;
+}
+body .site-content .gallery {
+  margin-top: 40px;
+  width: 100%;
+}
+body .site-content .gallery .card {
+  height: 500px;
+  width: 350px;
+}
+body .site-content .gallery .card .card-title {
+  font-family: 'Merriweather', serif;
+}
+body .site-content .gallery .card .card-content p {
+  color: #808080;
+}
+body .site-content .gallery .card .card-image img {
+  height: 250px;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=all_studies.css.map */

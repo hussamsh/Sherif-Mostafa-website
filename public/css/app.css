@@ -1,375 +1,50 @@
 body {
-  margin: 0;
-  padding: 0;
-}
-body #image1 {
-  display: table;
-  width: 100%;
-  height: 50%;
-  background: url("https://images.unsplash.com/photo-1461016951828-c09537329b3a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=7777e79b0b2c539d64f1f356d09ed136");
-  background-size: cover;
-  background-position: center center;
-}
-.image .wrapper {
-  margin: 0;
-  padding: 0;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  width: 100%;
-  position: absolute;
-  top: 15%;
-}
-.image .wrapper h1 {
-  font-family: 'PT Serif', serif;
-  font-size: 5em;
-  font-weight: 600;
-  color: #fff;
-}
-.image .wrapper hr {
-  max-width: 500px;
-  max-height: 50px;
-  border: 0;
-  height: 3px;
-  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-  background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-}
-.image .wrapper h3 {
-  color: #fff;
-  font-family: 'Merriweather', serif;
-  font-size: 2em;
-}
-.services .content .wrapper {
-  min-height: 50px;
-}
-.services .content .wrapper h1 {
-  padding-top: 30px;
-  width: 100%;
-  text-align: center;
-  font-size: 3em;
-  font-weight: 400;
-  font-family: 'Lobster', cursive;
-}
-.services .content .wrapper hr {
-  margin-top: -5px;
-  max-width: 300px;
-  padding: 0;
-  border: none;
-  border-top: medium double #333;
-  color: #333;
-  text-align: center;
-}
-.services .content .wrapper hr:after {
-  content: "✻";
-  display: inline-block;
-  position: relative;
-  top: -0.7em;
-  font-size: 1.5em;
-  padding: 0 0.25em;
-  background: #fff;
-}
-.services .content .wrapper hr {
-  padding-bottom: 20px;
-}
-.services .content .service-wrapper {
-  margin-top: 20px;
-  padding-left: 330px;
-  padding-right: 330px;
-  height: 250px;
-}
-.services .content .service-wrapper .service {
-  width: 100px;
-  height: 200px;
-  width: calc(99.99% * 1/3 - (30px - 30px * 1/3));
-  margin-bottom: 20px;
-  text-align: center;
-}
-.services .content .service-wrapper .service:nth-child(1n) {
-  float: left;
-  margin-right: 30px;
-  clear: none;
-}
-.services .content .service-wrapper .service:last-child {
-  margin-right: 0;
-}
-.services .content .service-wrapper .service:nth-child(3n) {
-  margin-right: 0;
-  float: right;
-}
-.services .content .service-wrapper .service:nth-child(3n + 1) {
-  clear: left;
-}
-@media only screen and (max-width: 400px) {
-  .services .content .service-wrapper .service {
-    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));
-  }
-  .services .content .service-wrapper .service:nth-child(1n) {
-    float: left;
-    margin-right: 30px;
-    clear: none;
-  }
-  .services .content .service-wrapper .service:last-child {
-    margin-right: 0;
-  }
-  .services .content .service-wrapper .service:nth-child(1n) {
-    margin-right: 0;
-    float: right;
-  }
-  .services .content .service-wrapper .service:nth-child(1n + 1) {
-    clear: left;
-  }
-}
-.services .content .service-wrapper .service h3 {
-  font-family: 'Merriweather', serif;
-  text-align: center;
-  width: 100%;
-  font-size: 2em;
-}
-.services .content .service-wrapper .service p {
-  font-family: 'Lato', sans-serif;
-  color: #808080;
-}
-.services .content .service-wrapper .service i {
-  font-size: 60px;
-  color: #c5a47e;
-  margin-bottom: 10px;
-}
-.about-me {
-  margin-top: 120px;
-  width: 100%;
-  height: 700px;
-  background: #f7f4f4;
-}
-.about-me .content h1 {
-  padding-top: 30px;
-  width: 100%;
-  text-align: center;
-  font-size: 3em;
-  font-weight: 400;
-  font-family: 'Lobster', cursive;
-}
-.about-me .content hr {
-  margin-top: -5px;
-  max-width: 300px;
-  padding: 0;
-  border: none;
-  border-top: medium double #333;
-  color: #333;
-  text-align: center;
-}
-.about-me .content hr:after {
-  content: "✻";
-  display: inline-block;
-  position: relative;
-  top: -0.7em;
-  font-size: 1.5em;
-  padding: 0 0.25em;
-  background: #f7f4f4;
-}
-.about-me .content .wrapper .image-wrapper {
-  width: calc(99.99% * 1/2 - (30px - 30px * 1/2));
-  height: 500px;
-  position: relative;
-}
-.about-me .content .wrapper .image-wrapper:nth-child(1n) {
-  float: left;
-  margin-right: 30px;
-  clear: none;
-}
-.about-me .content .wrapper .image-wrapper:last-child {
-  margin-right: 0;
-}
-.about-me .content .wrapper .image-wrapper:nth-child(2n) {
-  margin-right: 0;
-  float: right;
-}
-.about-me .content .wrapper .image-wrapper:nth-child(2n + 1) {
-  clear: left;
-}
-.about-me .content .wrapper .image-wrapper .personal-image {
-  background: url("https://lh3.googleusercontent.com/4Gayhe7ciGpuUKMWFcJEfPUuGdAC2BROzsbpzfOvK9zjh4QC9SjGtClA2G_jKpi0kjXmrtlF0Q4UOOtNJGfBHlx36yufqO7u9CI9wteB2eSn8nrRmHGCcI_RaEZsWJI8RdNtAD1wBiOZ0WBSuUudFzu6S5pUeAy3DNW0LnNgKFeDMo1WbNpWgbZKwVEn7yBD2pQlqgC0ZJZYsg8rjZZv5Mt-RSs10IT6qUp4Bih-bVaOtD3mqRya5Y61U1L_yVhf9FC2z6lNuVwTaCoKmaiJKAm5UvtBBb4s6uvLbux_GSMXU2941L7Jba68J_1Y26JQcRvo9JPipRZw1LPI_gK4CZDHByZU9Aj2GOIG8cOLQPbWFlYjMY6bAAUWPsu8goUAB-9HK_NcwnThYUpbq3_waw3Rwda5mwJKVa1pV2JjORaOhF3GTwdXbvgt0doUoSpK8cB46il6RJ-qAubtI9yfsaVtwigcYSA0QC-OSoUVT-a3XAkxn3zoCW3OrASkuf7Koty9G9KAcXk3MnibJJ_u9d2bYFuVSlIywnlRJCBElMWCllTP76n6UfR6qNu8HW721ALQvOSDMuh8gFK-iH7M3L4vwBEXKQ=w493-h720-no");
-  height: 500px;
-  width: 500px;
-  border-radius: 50%;
-  background-size: cover;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -230px 0 0 -100px;
-}
-.about-me .content .wrapper .personal-info {
-  height: 500px;
-  width: calc(99.99% * 1/2 - (30px - 30px * 1/2));
-}
-.about-me .content .wrapper .personal-info:nth-child(1n) {
-  float: left;
-  margin-right: 30px;
-  clear: none;
-}
-.about-me .content .wrapper .personal-info:last-child {
-  margin-right: 0;
-}
-.about-me .content .wrapper .personal-info:nth-child(2n) {
-  margin-right: 0;
-  float: right;
-}
-.about-me .content .wrapper .personal-info:nth-child(2n + 1) {
-  clear: left;
-}
-.about-me .content .wrapper .personal-info #title {
-  padding-top: 70px;
-  font-family: 'PT Serif', serif;
-}
-.about-me .content .wrapper .personal-info #description {
-  width: 70%;
-  font-family: 'Lato', sans-serif;
-  color: #808080;
-}
-.my-work {
-  margin-top: 50px;
-  width: 100%;
-  height: 1400px;
-}
-.my-work .content h1 {
-  padding-top: 20px;
-  width: 100%;
-  text-align: center;
-  font-size: 3em;
-  font-weight: 400;
-  font-family: 'Lobster', cursive;
-}
-.my-work .content hr {
-  margin-top: -5px;
-  max-width: 300px;
-  padding: 0;
-  border: none;
-  border-top: medium double #333;
-  color: #333;
-  text-align: center;
-}
-.my-work .content hr:after {
-  content: "✻";
-  display: inline-block;
-  position: relative;
-  top: -0.7em;
-  font-size: 1.5em;
-  padding: 0 0.25em;
-  background: #fff;
-}
-.my-work .content .wrapper {
-  margin-top: 30px;
-}
-.my-work .content .wrapper .gallery {
-  *zoom: 1;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-.my-work .content .wrapper .gallery:before {
-  content: '';
-  display: table;
-}
-.my-work .content .wrapper .gallery:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-.my-work .content .wrapper .gallery .card {
-  height: 500px;
-  width: 350px;
-}
-.my-work .content .wrapper .gallery .card .card-title {
-  font-family: 'Merriweather', serif;
-}
-.my-work .content .wrapper .gallery .card .card-content p {
-  color: #808080;
-}
-.my-work .content .wrapper .gallery .card .card-image img {
-  height: 250px;
-  background-size: cover;
-}
-.my-work .content .button-wrapper {
-  width: 100%;
-  margin-top: 25px;
-}
-.my-work .content .button-wrapper .btn-large {
-  background: #ffab00;
-  margin-left: 45%;
-}
-.achievements .content {
-  background: url("http://oshine.brandexponentscr.netdna-cdn.com/oshin/v8/wp-content/uploads/sites/8/2014/09/oshin-v8-stage-2.jpg");
-  width: 100%;
-  background-size: cover;
-  height: 500px;
-}
-.achievements .content .wrapper {
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.7);
-}
-.achievements .content .wrapper .achievements-gallery {
-  *zoom: 1;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 100%;
-}
-.achievements .content .wrapper .achievements-gallery:before {
-  content: '';
-  display: table;
-}
-.achievements .content .wrapper .achievements-gallery:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-.achievements .content .wrapper .achievements-gallery p.number {
-  font-family: 'Lato', serif;
-  font-size: 5em;
-  color: #fff;
-  text-align: center;
-  padding-top: 60px;
-}
-.achievements .content .wrapper .achievements-gallery p.description {
-  font-family: 'Merriweather', serif;
-  color: #fff;
-  text-align: center;
-  font-size: 2em;
-}
-.contact-me {
-  background: #f7f4f4;
-  height: 300px;
-}
-.contact-me .content {
-  padding-top: 50px;
-  width: 100%;
-}
-.contact-me .content h1 {
-  font-size: 3em;
-  font-weight: 400;
-  font-family: 'Lobster', cursive;
-  text-align: center;
-}
-.contact-me .content .btn-large {
-  background: #ffab00;
-  margin-top: 20px;
-  margin-left: 45%;
-}
-.footer-section .page-footer {
-  margin: 0;
-}
-.footer-section .page-footer .container {
-  text-align: center;
-}
-.footer-section .page-footer .container hr {
-  max-width: 300px;
-}
-.footer-section .page-footer .container a {
-  color: inherit;
-  margin-left: 10px;
-  margin-right: 10px;
-}
+	padding: 0;
+	margin: 0;
+}
+body section.nav-bar {
+	margin: 0;
+	padding: 0;
+}
+body section.nav-bar .wrapper {
+	background: #fff;
+	overflow: hidden;
+}
+body section.nav-bar .wrapper .side-bar-item {
+	margin: 0;
+	height: 65px;
+	width: calc(99.99% * 1/3 - (30px - 30px * 1/3));
+}
+body section.nav-bar .wrapper .side-bar-item:nth-child(1n) {
+	float: left;
+	margin-right: 30px;
+	clear: none;
+}
+body section.nav-bar .wrapper .side-bar-item:last-child {
+	margin-right: 0;
+}
+body section.nav-bar .wrapper .side-bar-item:nth-child(3n) {
+	margin-right: 0;
+	float: right;
+}
+body section.nav-bar .wrapper .side-bar-item:nth-child(3n + 1) {
+	clear: left;
+}
+body section.nav-bar .wrapper .main-header {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	align-items: center;
+}
+body section.nav-bar .wrapper .main-header h1 {
+	font-family: 'Lobster', serif;
+}
+body section.nav-bar .wrapper .main-header h1 a {
+	color: #000;
+}
+body .site-content{
+	margin-top:60px;
+} 
 
-/*# sourceMappingURL=app.css.map */

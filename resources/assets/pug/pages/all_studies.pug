@@ -1,0 +1,33 @@
+mixin add-study-card
+	.card(class="cell")
+		.card-image(class="waves-effect waves-block waves-light")
+			a(href!="{{action('PagesController@studyOverview' , 1)}}")
+				img(src!="{{$study->image_url}}").activator
+		.card-content
+			a(href="{{action('PagesController@studyOverview' , 1)}}")
+				span(class="activator grey-text text-darken-4").card-title.
+					{{$study->name}}
+			p.
+				{{$study->short_description}}
+| @extends('app')
+| @section('links')
+link(href='{{{ asset(\'/css/all_studies.css\') }}}', rel='stylesheet')
+link(href='https://fonts.googleapis.com/css?family=PT+Serif:400i|Lato|Merriweather:300', rel='stylesheet')
+link(href='{{{asset(\'/css/materialize.min.css\')}}}', rel='stylesheet' , media="screen,projection")
+| @stop
+| @section('scripts')
+script(src='https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js')
+script(src='{{{asset(\'/js/cells-by-row.js\')}}}')
+script(src='{{{asset(\'/js/materialize.min.js\')}}}')
+script(src='{{{asset(\'/js/all_studies.js\')}}}')
+| @stop
+| @section('content')
+h1.
+	All studies
+hr
+.wrapper
+	.gallery
+		| @foreach($studies as $study)
+		+add-study-card
+		| @endforeach
+| @stop

@@ -21,7 +21,9 @@ elixir(function(mix) {
     });
     //mix.stylusBundle();
 
-    mix.stylus('app.styl' ,null , {use:[rupture() , postStylus(['lost', 'autoprefixer'])]});
-    mix.stylus('study_overview.styl' ,null , {use:[rupture() , postStylus(['lost', 'autoprefixer'])]});
+    //mix.stylus('about.styl' ,null , {use:[rupture() , postStylus(['lost', 'autoprefixer'])]});
+    /*mix.stylus('study_overview.styl' ,null , {use:[rupture() , postStylus(['lost', 'autoprefixer'])]});*/
+    //mix.stylus('contact.styl' ,null , {use:[rupture() , postStylus(['lost', 'autoprefixer'])]});
+    mix.stylus('all_studies.styl' ,null , {use:[rupture() , postStylus(['lost', 'autoprefixer'])]});
 });
 

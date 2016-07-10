@@ -1,0 +1,49 @@
+body .site-content {
+  *zoom: 1;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+body .site-content:before {
+  content: '';
+  display: table;
+}
+body .site-content:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+body .site-content h2 {
+  font-family: 'PT Serif', serif;
+}
+body .site-content h2#Main-header {
+  padding-top: 150px;
+  color: #808080;
+  font-size: 1.7em;
+}
+body .site-content hr {
+  max-width: 200px;
+}
+body .site-content p {
+  font-family: 'Lato', serif;
+  font-size: 1.2em;
+  color: #808080;
+}
+body .site-content h1#email {
+  padding-top: 35px;
+  font-size: 3em;
+  font-family: 'Merriweather', serif;
+}
+body .site-content p#can-we-be-friends {
+  padding-top: 30px;
+}
+body .site-content a {
+  color: inherit;
+}
+body .site-content a i {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=contact.css.map */
