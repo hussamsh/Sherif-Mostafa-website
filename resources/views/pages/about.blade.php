@@ -1,7 +1,7 @@
 
 <html lang="en">
   <head>
-    <title>My title is awesome</title>
+    <title>Sherif Mostafa</title>
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:700i|Merriweather|Lobster|Lato" rel="stylesheet"/>
