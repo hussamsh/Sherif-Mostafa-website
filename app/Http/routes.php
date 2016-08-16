@@ -12,7 +12,7 @@
 |
 */
 
-Route::get('about' , 'PagesController@about');
+Route::get('/' , 'PagesController@about');
 Route::get('contact' , 'PagesController@contact');
 Route::get('study/{id}' , 'PagesController@studyOverview');
 Route::get('all_studies' , 'PagesController@allStudies');
