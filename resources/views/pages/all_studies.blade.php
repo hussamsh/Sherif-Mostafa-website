@@ -6,7 +6,7 @@
 <link href="{{{asset('/css/materialize.min.css')}}}" rel="stylesheet" media="screen,projection"/>
 @stop
 @section('scripts')
-<script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
 <script src="{{{asset('/js/cells-by-row.js')}}}"></script>
 <script src="{{{asset('/js/materialize.min.js')}}}"></script>
 <script src="{{{asset('/js/all_studies.js')}}}"></script>
